@@ -1,0 +1,27 @@
+{
+  "name": "drizzle-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts",
+    "generate":"drizzle-kit generate:pg",
+    "create:tables":"ts-node --files ./migrations/migrator.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "drizzle-orm": "^0.40.0",
+    "express": "^4.21.2",
+    "pg": "^8.13.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/pg": "^8.11.11",
+    "drizzle-kit": "^0.30.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
